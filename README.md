@@ -56,7 +56,7 @@ Then, the spotlight shifted to the stars of our show – neural networks built w
 What's the biggest takeaway from this datathon and challenge? Collaboration and learning. Together, we've tackled real-world data puzzles, transformed them into actionable insights, and expanded our horizons in machine learning. The journey may not always be smooth, but the discoveries and growth along the way make it all worthwhile.
 
 ## What's next for Hospital Plunge
-###Feature Importance Analysis:
+### Feature Importance Analysis:
 
 Further exploration of feature importance can provide insights into which medical parameters significantly impact patient outcomes.
 
