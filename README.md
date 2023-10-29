@@ -2,7 +2,7 @@
 ## What it does
 In our data-driven journey, we start by receiving patient data in the form of a CSV file. This treasure trove of information is then transformed into a pandas dataframe, a structured format that serves as the foundation for our predictive model.
 
-But what's our model's mission? To peer into the future and make a crucial call: will the patient, based on the information we have, be deceased or not?
+But what's our model's purpose? To peer into the future and make a crucial call: will the patient, based on the information we have, live?
 
 To carry out this vital task, we enlist the power of neural networks. These intricate systems of interconnected nodes are designed to sift through the data, recognize patterns, and deliver predictions that can be life-saving.
 
@@ -45,34 +45,29 @@ The most significant hurdle we encountered revolved around hyperparameter tuning
 We accomplished the development and evaluation of multiple machine learning models, including the Random Forest Classifier, Support Vector Machines (SVM), and a Neural Network built using TensorFlow and Keras. Our process involved meticulous data preprocessing, encompassing the handling of missing values, dataset cleaning, categorical feature encoding, and numerical data standardization, ensuring the dataset's readiness for model training. By employing K-Fold cross-validation with 5 folds and utilizing Principal Component Analysis (PCA) for dimensionality reduction, we effectively trained and evaluated the Neural Network model. We meticulously computed and reported vital performance metrics such as F1-score, Precision, Recall, and Accuracy for each fold during cross-validation, providing a comprehensive understanding of the model's predictive capabilities. Furthermore, we ensured the model's readiness for real-world application by saving it in a Keras format for future use or deployment.
 
 ## What we learned
-Our journey through this data adventure has been enlightening. We've come to realize that real-world data isn't always as pristine as we'd hope. Instead, it often arrives in less-than-perfect form, with gaps and quirks that need our attention.
+Our journey through this data adventure has been enlightening. Real-world data isn't always as pristine as we'd hope. Instead, it often arrives in less-than-perfect form, with gaps and quirks that need our attention.
 
-Our first lesson? Data wrangling. We've learned how to handle missing values and outliers. Sometimes, it's about filling in the gaps with our best-educated guesses. Other times, it means gracefully letting go of problematic data points. The art of data preparation is all about making the information accessible and readable for our model.
+Our first lesson? Data wrangling. We learned how to handle missing values and outliers. Sometimes, we filled in the gaps with educated guesses. Other times, we had to let go of problematic outliers. The art of data preparation is all about making the information accessible and readable for our model.
 
-But data isn't always just numbers. Often, we encounter categorical data, which our models can't directly comprehend. That's where one-hot encoding comes into play. It's our secret sauce for translating categories into numbers, making it possible for our model to crunch the data.
+But data isn't always just numbers. Often, we encountered categorical data, which our models couldn't directly comprehend. That's where one-hot encoding came into play. It's our secret sauce for translating categories into numbers, making it possible for our model to crunch the data.
 
-Then, the spotlight shifted to the stars of our show – neural networks built with TensorFlow and Keras. We've ventured into the realm of artificial intelligence, crafting models capable of making predictions, classifications, and uncovering hidden patterns in the data.
+Then, the spotlight shifted to the stars of our show – neural networks built with TensorFlow and Keras. We ventured into the realm of artificial intelligence, crafting models capable of making predictions, classifications, and uncovering hidden patterns in the data.
 
-What's the biggest takeaway from this datathon and challenge? Collaboration and learning. Together, we've tackled real-world data puzzles, transformed them into actionable insights, and expanded our horizons in machine learning. The journey may not always be smooth, but the discoveries and growth along the way make it all worthwhile.
+By far, our biggest takeaway from this Datathon was collaboration and learning. Together, we tackled real-world data puzzles, transformed them into actionable insights, and expanded our horizons in machine learning. The journey may not always be smooth, but the discoveries and growth along the way make it all worthwhile.
 
 ## What's next for Hospital Plunge
 ### Feature Importance Analysis:
 
-Further exploration of feature importance can provide insights into which medical parameters significantly impact patient outcomes.
+Further exploration of feature importance could provide insights into which medical parameters significantly impact patient outcomes, thus allowing us to optimize our model by selecting the top *n* features from our data.
 
 ### Hyperparameter Tuning:
 
-Fine-tuning of model hyperparameters and architecture could potentially enhance predictive performance.
+Fine-tuning the model's hyperparameters and architecture could potentially enhance predictive performance.
 
 ### Class Imbalance Handling:
 
-Given the potential class imbalance in the target variable, advanced techniques for handling class imbalance like oversampling or undersampling could be explored to improve model generalization.
+Given the potential class imbalance in the target variable, advanced techniques for handling class imbalance like oversampling or undersampling could be explored to improve how well the model can generalize to unseen data.
 
 ### External Validation and Real-World Application:
 
-Evaluating the model's performance on external datasets and considering its deployment within a real clinical environment would be crucial to verify its practical utility and robustness.
-Further Research and Collaboration:
-
-Collaborations with domain experts and further research might enrich the analysis by integrating domain-specific knowledge and refining the model's predictive capabilities.
-
-
+Evaluating the model's performance on external datasets ("transfer learning") and considering its deployment within a real clinical environment would be crucial to verify its practical utility and robustness.
