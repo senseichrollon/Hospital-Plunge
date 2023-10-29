@@ -14,17 +14,17 @@ Our journey is one of data, transformation, and prediction. We're not just crunc
 To handle missing values, we replaced missing values and empty entries with zeros to ensure the trained model would be able to handle the data effectively.
 Non-numeric columns were one-hot encoded to prepare categorical data for analysis.
 
-####Feature Engineering and Transformation:
+#### Feature Engineering and Transformation:
 
 The dataset was separated into feature vectors and the target label.
 Numeric features were standardized using StandardScaler to maintain uniform scales for model training.
 
-###Model Training and Evaluation:
-####Model Selection and Training:
+### Model Training and Evaluation:
+#### Model Selection and Training:
 
 The predictive models used in this analysis involved a Random Forest Classifier, Support Vector Machines (SVM), and a Neural Network implemented using TensorFlow and Keras.
 The selected Neural Network model architecture included multiple dense layers with dropout for regularization and a final output layer with a sigmoid activation for binary classification.
-####Training Methodology:
+#### Training Methodology:
 
 K-Fold cross-validation with 5 folds was employed to train and evaluate the Neural Network model. PCA was utilized for dimensionality reduction in the feature space.
 The model was trained for 20 epochs with a batch size of 32.
@@ -60,7 +60,7 @@ What's the biggest takeaway from this datathon and challenge? Collaboration and 
 
 Further exploration of feature importance can provide insights into which medical parameters significantly impact patient outcomes.
 
-###Hyperparameter Tuning:
+### Hyperparameter Tuning:
 
 Fine-tuning of model hyperparameters and architecture could potentially enhance predictive performance.
 
